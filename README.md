@@ -83,7 +83,7 @@ It executes in **under 30 seconds**, makes **zero changes** to your infrastructu
    • Complete Terraform guardrails (AWS Budgets, Anomaly Detection & Off-Hours Auto-Stop)
    • 25-Page Field Manual + 20-Point Monthly FinOps Checklist (CSV)
 
-   👉 Get the Full Kit: https://yourhandle.gumroad.com/l/aws-cost-optimization-kit
+   👉 Get the Full Kit: https://neerajranan.gumroad.com/l/aws-cost-optimization-kit
 ```
 
 ---
@@ -98,7 +98,7 @@ It executes in **under 30 seconds**, makes **zero changes** to your infrastructu
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/aws-waste-scanner.git
+git clone https://github.com/Neeraj16102004/aws-waste-scanner.git
 cd aws-waste-scanner
 
 # 2. Install dependencies (just boto3)
@@ -141,7 +141,7 @@ Attach this least-privilege IAM policy to your IAM user or role to run the scann
 
 ## 📊 Free vs. Pro Edition Comparison
 
-| Feature / Capability | `aws-waste-scanner` (Free) | [Production FinOps Kit (Pro)](https://yourhandle.gumroad.com/l/aws-cost-optimization-kit) |
+| Feature / Capability | `aws-waste-scanner` (Free) | [Production FinOps Kit (Pro)](https://neerajranan.gumroad.com/l/aws-cost-optimization-kit) |
 | :--- | :---: | :---: |
 | **Unattached EBS Volume Audit** | ✅ Yes | ✅ Yes |
 | **Unassociated Elastic IP Audit** | ✅ Yes | ✅ Yes |
