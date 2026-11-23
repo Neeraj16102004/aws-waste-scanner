@@ -18,7 +18,7 @@
 > - **25-Page Engineering Field Manual:** Real CLI commands, NAT Gateway VPC Endpoint bypass guides, and S3 multipart cleanup scripts.
 > 
 > 🎁 **GitHub Launch Discount:** Use code **`FIRST10`** at checkout for **40% OFF** the full Pro Kit.  
-> 👉 **[Claim 40% Off The Production FinOps Kit]((https://gumroad.com/products/nfcny)?discount_code=FIRST10)**
+> 👉 **[Claim 40% Off The Production FinOps Kit](https://gumroad.com/products/nfcny?discount_code=FIRST10)**
 
 ---
 
