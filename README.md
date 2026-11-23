@@ -11,14 +11,14 @@
 > ### 🚀 Looking for the Complete AWS FinOps Toolkit?
 > **`aws-waste-scanner`** is the free community edition that audits unattached EBS volumes and idle Elastic IPs.
 > 
-> Need the complete solution? Check out **[The Production AWS Cost-Optimization Playbook & FinOps Kit](https://yourhandle.gumroad.com/l/aws-cost-optimization-kit)**:
+> Need the complete solution? Check out **[The Production AWS Cost-Optimization Playbook & FinOps Kit](https://gumroad.com/products/nfcny)**:
 > - **Full 5-Service Waste Auditor:** Adds live `gp2` $\to$ `gp3` migration savings math (20%), uncapped CloudWatch logs auditing, and running non-prod EC2/RDS detection.
 > - **Turnkey Terraform Guardrails:** Pre-built AWS Budgets (actual + forecast) and Cost Anomaly Detection ($25/20% daily threshold).
 > - **Automated Off-Hours Scheduler:** Python 3.12 Lambda + EventBridge cron that shuts down non-prod workloads on nights/weekends (~65% compute savings).
 > - **25-Page Engineering Field Manual:** Real CLI commands, NAT Gateway VPC Endpoint bypass guides, and S3 multipart cleanup scripts.
 > 
 > 🎁 **GitHub Launch Discount:** Use code **`FIRST10`** at checkout for **40% OFF** the full Pro Kit.  
-> 👉 **[Claim 40% Off The Production FinOps Kit](https://yourhandle.gumroad.com/l/aws-cost-optimization-kit?discount_code=FIRST10)**
+> 👉 **[Claim 40% Off The Production FinOps Kit]((https://gumroad.com/products/nfcny)?discount_code=FIRST10)**
 
 ---
 
@@ -164,7 +164,7 @@ Ready to tackle the other 80% of your AWS waste?
 
 Get **The Production AWS Cost-Optimization Playbook & FinOps Kit** with ready-to-deploy Terraform guardrails, the complete 5-service multi-region Python auditor, and the 25-page playbook.
 
-1. Head over to **[The Production AWS Cost-Optimization Kit on Gumroad](https://yourhandle.gumroad.com/l/aws-cost-optimization-kit)**.
+1. Head over to **[The Production AWS Cost-Optimization Kit on Gumroad](https://gumroad.com/products/nfcny)**.
 2. Enter discount code **`FIRST10`** at checkout.
 3. Save **40% instantly** on your copy.
 
