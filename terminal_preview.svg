@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 760" width="100%" height="100%">
+  <defs>
+    <!-- macOS Drop Shadow -->
+    <filter id="terminal-shadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+    <!-- Window Clip Path -->
+    <clipPath id="window-clip">
+      <rect x="30" y="20" width="880" height="710" rx="12" ry="12" />
+    </clipPath>
+  </defs>
+
+  <style>
+    .code { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 12.5px; line-height: 1.45; }
+    .dim { fill: #6e7681; }
+    .text { fill: #c9d1d9; }
+    .bold { font-weight: 700; fill: #f0f6fc; }
+    .cyan { fill: #58a6ff; font-weight: 700; }
+    .green { fill: #3fb950; font-weight: 700; }
+    .yellow { fill: #d29922; font-weight: 700; }
+    .red { fill: #f85149; font-weight: 700; }
+    .purple { fill: #bc8cff; }
+  </style>
+
+  <!-- Window Container with Drop Shadow -->
+  <g filter="url(#terminal-shadow)">
+    <!-- Terminal Background -->
+    <rect x="30" y="20" width="880" height="710" rx="12" ry="12" fill="#0d1117" stroke="#30363d" stroke-width="1.5" />
+    
+    <!-- Title Bar -->
+    <rect x="30" y="20" width="880" height="38" rx="12" ry="12" fill="#161b22" />
+    <!-- Line below titlebar -->
+    <line x1="30" y1="58" x2="910" y2="58" stroke="#30363d" stroke-width="1" />
+    
+    <!-- macOS Traffic Lights -->
+    <circle cx="52" cy="39" r="6" fill="#ff5f56" stroke="#e0443e" stroke-width="0.8" />
+    <circle cx="72" cy="39" r="6" fill="#ffbd2e" stroke="#dea123" stroke-width="0.8" />
+    <circle cx="92" cy="39" r="6" fill="#27c93f" stroke="#1aab29" stroke-width="0.8" />
+
+    <!-- Window Title -->
+    <text x="470" y="43" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" text-anchor="middle">
+      alex@macbook: ~/aws-waste-scanner (zsh) — 92x34
+    </text>
+
+    <!-- Terminal Content -->
+    <g class="code" clip-path="url(#window-clip)">
+      <!-- Command Prompt -->
+      <text x="50" y="85">
+        <tspan fill="#3fb950" font-weight="700">alex@macbook</tspan>
+        <tspan fill="#6e7681">:</tspan>
+        <tspan fill="#58a6ff" font-weight="600">~/aws-waste-scanner</tspan>
+        <tspan fill="#f0f6fc"> $ python scan_waste.py --profile production</tspan>
+      </text>
+
+      <!-- Banner -->
+      <text x="50" y="110" class="cyan">════════════════════════════════════════════════════════════════════════════════════════</text>
+      <text x="50" y="128" class="cyan">   AWS-WASTE-SCANNER // FREE COMMUNITY EDITION</text>
+      <text x="50" y="146" class="cyan">════════════════════════════════════════════════════════════════════════════════════════</text>
+      
+      <!-- Account Metadata -->
+      <text x="50" y="166">
+        <tspan class="dim"> Account ID      : </tspan><tspan class="bold">123456789012</tspan>
+      </text>
+      <text x="50" y="184">
+        <tspan class="dim"> Execution IAM   : </tspan><tspan class="text">arn:aws:iam::123456789012:user/alex.devops</tspan>
+      </text>
+      <text x="50" y="202">
+        <tspan class="dim"> Regions Scanned : </tspan><tspan class="text">17 regions (us-east-1, us-east-2, us-west-1, us-west-2, eu-west-1...)</tspan>
+      </text>
+      <text x="50" y="220">
+        <tspan class="dim"> Timestamp       : </tspan><tspan class="text">2026-11-23 16:30:10 UTC</tspan>
+      </text>
+      <text x="50" y="238" class="dim">────────────────────────────────────────────────────────────────────────────────────────</text>
+
+      <!-- Section 1: EBS Volumes -->
+      <text x="50" y="260" class="cyan">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</text>
+      <text x="50" y="278" class="cyan"> 1. UNATTACHED EBS VOLUMES (STATE == 'AVAILABLE') (3 detected)</text>
+      <text x="50" y="296" class="cyan">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</text>
+      <text x="50" y="316" class="bold"> Region    │ Volume ID             │ Type │ Size   │ Name Tag             │ Est. Monthly Waste</text>
+      <text x="50" y="334" class="dim">────────────────────────────────────────────────────────────────────────────────────────</text>
+      <text x="50" y="352">
+        <tspan class="text"> us-east-1 │ vol-01a2b3c4d5e6f7g8a │ gp2  │ 500 GB │ legacy-redis-backup  │ </tspan><tspan class="red">$50.00</tspan>
+      </text>
+      <text x="50" y="370">
+        <tspan class="text"> us-east-1 │ vol-0987654321fedcba0 │ gp3  │ 100 GB │ test-migration-disk  │ </tspan><tspan class="red">$8.00</tspan>
+      </text>
+      <text x="50" y="388">
+        <tspan class="text"> eu-west-1 │ vol-0fedcba9876543210 │ gp2  │ 250 GB │ staging-mongo-data   │ </tspan><tspan class="red">$25.00</tspan>
+      </text>
+
+      <!-- Section 2: Elastic IPs -->
+      <text x="50" y="415" class="cyan">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</text>
+      <text x="50" y="433" class="cyan"> 2. UNASSOCIATED ELASTIC IPS ($3.60/MONTH PER IDLE IP) (4 detected)</text>
+      <text x="50" y="451" class="cyan">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</text>
+      <text x="50" y="471" class="bold"> Region    │ Allocation ID            │ Public IP       │ Name Tag       │ Est. Monthly Waste</text>
+      <text x="50" y="489" class="dim">────────────────────────────────────────────────────────────────────────────────────────</text>
+      <text x="50" y="507">
+        <tspan class="text"> us-east-1 │ eipalloc-0123456789abc   │ 54.210.14.88    │ dev-nat-eip    │ </tspan><tspan class="red">$3.60</tspan>
+      </text>
+      <text x="50" y="525">
+        <tspan class="text"> us-east-1 │ eipalloc-0987654321def   │ 52.86.192.10    │ old-bastion    │ </tspan><tspan class="red">$3.60</tspan>
+      </text>
+      <text x="50" y="543">
+        <tspan class="text"> us-west-2 │ eipalloc-0fedcba123456   │ 35.160.42.19    │ -              │ </tspan><tspan class="red">$3.60</tspan>
+      </text>
+      <text x="50" y="561">
+        <tspan class="text"> eu-west-1 │ eipalloc-0112233445566   │ 18.200.55.12    │ unused-public  │ </tspan><tspan class="red">$3.60</tspan>
+      </text>
+
+      <!-- Summary Box -->
+      <text x="50" y="588" class="green">════════════════════════════════════════════════════════════════════════════════════════</text>
+      <text x="50" y="606" class="green"> SCAN SUMMARY &amp; RECOVERABLE SAVINGS</text>
+      <text x="50" y="624" class="green">════════════════════════════════════════════════════════════════════════════════════════</text>
+      <text x="50" y="642">
+        <tspan class="text"> Unattached EBS Volumes Found :    3  ($83.00/month)</tspan>
+      </text>
+      <text x="50" y="660">
+        <tspan class="text"> Unassociated Elastic IPs     :    4  ($14.40/month)</tspan>
+      </text>
+      <text x="50" y="675" class="dim">────────────────────────────────────────────────────────────────────────────────────────</text>
+      <text x="50" y="694">
+        <tspan class="bold"> TOTAL IMMEDIATE MONTHLY WASTE : </tspan><tspan class="red">$97.40/month</tspan>
+        <tspan class="dim">  │  </tspan>
+        <tspan class="bold">ANNUALIZED SAVINGS : </tspan><tspan class="green">$1,168.80/year</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

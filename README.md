@@ -6,6 +6,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Read-Only Guarantee](https://img.shields.io/badge/security-100%25%20read--only-brightgreen.svg)](#-security--minimum-read-only-iam-policy)
 
+<p align="center">
+  <img src="terminal_preview.svg" alt="aws-waste-scanner CLI Terminal Preview" width="100%">
+</p>
+
 ---
 
 > ### 🚀 Looking for the Complete AWS FinOps Toolkit?
